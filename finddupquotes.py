@@ -30,7 +30,9 @@ for k,q in qcmp.iteritems():
       continue
 
     if q == q1:
-      print str(k1)+" -  "+quotes[k1]
+      print "###################repeat#####################\n"
+      print quotes[k1]
+      print "##############################################\n"
       continue
      
     if len(q) >= 2*len(q1) or len(q1) > 2*len(q):
@@ -43,6 +45,6 @@ for k,q in qcmp.iteritems():
           same += 1
 
     if same >= len(q):
-      print "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-      print quotes[k]+"\n###############################\n"+quotes[k1]
+      print "##############################################"
+      print quotes[k]+"\n-=-=-=-=-=-=-=-= the same as =-=-=-=-=-=-=-=-\n"+quotes[k1]
 
