@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# $Id: 20120722$
+# $Date: 2012-07-22 17:29:13$
+# $Author: Marek Lukaszuk$
+
 import sys
 import re
 
@@ -22,7 +26,7 @@ qcmp = {}
 i = 0
 for quote in qlist:
   quotes[i] = quote # listing normal quotes
-  # getting rid of all special characters 
+  # getting rid of all special characters
   qcmp[i] = re.sub("(\s|~|,|\.|'|\"|`|!|-|:|;|\)|\()+"," ",quote.lower())
   # making a list of unique words
   qcmp[i] = dict(zip(qcmp[i].split(),empty)).keys()
